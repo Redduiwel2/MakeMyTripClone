@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p style="background-color: #485461;background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);color:white">User Dashboard</p>
+               
+                  
+                 <li>
+                    <a href="#">Login/Sign-up now</a>
+                </li>
+                <li>
+                    <a href="#">View/Manage Trips</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+                   
+               
+                <li>
+                    <a href="#">My Wallet</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+                <li>
+                    <a href="#">Travel Offers</a>
+                </li>
+				<li>
+                    <a href="#">Flights</a>
+                </li>
+				<li>
+                    <a href="#">Hotels</a>
+                </li>
+				<li>
+					<a href="#"> Trains </a>
+				</li>
+				<li>
+					<a href="#"> Holiday Packages </a>
+				</li>
+				
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="User">User Agreement</a>
+                </li>
+                <li>
+                    <a href="#" class="Policy">Privacy Policy</a>
+                </li>
+				<li>
+                    <a href="#" class="Terms">Terms of Service</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:200px;">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-light" style="position:relative;">
+                        <i class="fas fa-align-left" style="color:black;"></i>
+                    </button>         
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                   
+                            <li class="nav-item">
+									<button type="button" class="btn btn-light" id="leftbutton1" style="padding:15px;border-radius:25px;background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);margin:10px;">
+										<i class="fas fa-user" style="color:white"></i>
+										<span style="color:white;">Login now</span>
+									</button>
+                            </li>
+                            <li class="nav-item">
+									<button type="button" class="btn btn-light" id="leftbutton2" style="padding:15px;border-radius:25px;margin:10px;">
+										<i class="fas fa-angle-right"></i>
+										<span>ENG</span>
+										
+									</button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <div class="jumbotron col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center text-center" style="width:60%;background-color:white;height:150px;posistion:relative;bottom:100px;z-index: 2;box-shadow: 0 8px 8px -10px black;border-radius:20px;">
+				<div class="button-item" style="position:relative;bottom:50px;">
+					<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:20px;color:#3480eb;margin:20px; outline:none;">
+						<i class="fas fa-plane"></i>
+						<p>Flight</p>
+					</button>
+					<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:20px;color:#eb3468;margin:20px;outline:none;">
+						<i class="fas fa-h-square"></i>
+						<p>Hotel</p>
+					<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:20px;color:#eba234;margin:20px;outline:none;">
+						<i class="fas fa-train"></i>
+						<p>Trains</p>
+					</button>
+					<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:20px;color:#34eb83;margin:20px;outline:none;">
+						<i class="fas fa-map"></i>
+						<p>Holidays</p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="jumbotron col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center text-center" style="width:60%;background-color:white;height:150px;posistion:relative;z-index: 2;box-shadow: 0 8px 8px -10px black;border-radius:20px;">
+				<div style="position:relative;bottom:90px;padding:10px;">
+					<div class="button-items" >
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#3480eb;margin:20px; outline:none;">
+						<i class="fas fa-car"></i>
+						<span>Airport<br>Cabs</span>
+						</button>
+
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#eb3468;margin:20px; outline:none;">
+						<i class="fas fa-bed"></i>
+						<span>Homestays</span>
+						</button>
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#eba234;margin:20px; outline:none;">
+						<i class="fas fa-bus"></i>
+						<span>Bus</span>
+						</button>
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#34eb83;margin:20px; outline:none;">
+						<i class="fas fa-hiking"></i>
+						<span>Activities<br>and Tours</span>
+						</button>
+					</div>
+					<div class="button-items" style="position:relative;bottom:25px;right:20px;">
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#3480eb;margin:20px; outline:none;">
+						<i class="fas fa-key"></i>
+						<span>Self Drive</span>
+						</button>
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#eb3468;margin:20px; outline:none;">
+						<i class="fas fa-map-marker-alt"></i>
+						<span>Getaways</span>
+						</button>
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#eba234;margin:20px; outline:none;">
+						<i class="fas fa-car"></i>
+						<span>Cabs</span>
+						</button>
+						<button type="button" class="btn shadow-none" id="flight1" style="background-color:white;padding:10px;color:#34eb83;margin:20px; outline:none;">
+						<i class="fas fa-passport"></i>
+						<span>Visa</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+
+</body>
+
+</html>
